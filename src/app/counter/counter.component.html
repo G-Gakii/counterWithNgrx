@@ -1,0 +1,24 @@
+<div class="text-center">
+  <h1 class="font-bold text-center text-5xl pt-4">Counter App</h1>
+  <p class="text-4xl py-4">{{ count$ | async }}</p>
+  <div class="btn">
+    <button
+      (click)="decrement()"
+      class="bg-green-500 text-white px-4 py-2 rounded-lg text-xl"
+    >
+      Decrement
+    </button>
+    <button
+      (click)="reset()"
+      class="bg-yellow-400 mx-8 text-white px-4 py-2 rounded-lg text-xl"
+    >
+      Reset
+    </button>
+    <button
+      (click)="increment()"
+      class="bg-red-500 text-white px-4 py-2 rounded-lg text-xl"
+    >
+      Increment
+    </button>
+  </div>
+</div>
